@@ -52,12 +52,14 @@ ul.nav.navbar-nav {
 	position: absolute;
 }
 
-.border-bot{
+.footer{
 	background-color: #f2ae9c;
-	height: 260px;
-	left: 0px;
-	right: 0px;
-	position: absolute;
+}
+.footer .container{
+	position: relative;
+}
+.footer .span_of_4{
+	background: #e8663c;
 }
 /*.container{
 	border: 5px #fff;
@@ -163,6 +165,11 @@ button.btn.btn-default {
 	text-transform: uppercase;
 	color: #fff;
 }
+.content-intro-img img{
+	width: 100%;
+	text-align: center;
+	padding-right: 15px;
+}
 .content-intro-title p{
 	color: #e8663c;
    	font-size: 18px;
@@ -217,3 +224,59 @@ span.text-category{
 }
 
 
+
+#carousel-id:before{
+	position: absolute;
+	right: 100%;
+	top: 0px;
+	height: 60px;
+	width: 10px;
+	content: '';
+	background: #fff;
+}
+#carousel-id:after{
+	position: absolute;
+	left: 100%;
+	top: 0px;
+	height: 60px;
+	width: 10px;
+	content: '';
+	background: #fff;
+}
+
+#carousel-id{
+	position: relative;
+}
+
+.footer .container:before{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 15px;
+	content: '';
+	background: #fff;
+	display: block;
+}
+
+.footer .container:after{
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 15px;
+	content: '';
+	background: #fff;
+}
+
+/*.content-gallery{
+	padding-left: 0px;
+	padding-right: 0px;
+}*/
+
+@media screen and (max-width:  768px){
+	.content-img .gallery-grid{
+		margin-bottom: 20px;
+	}
+}
